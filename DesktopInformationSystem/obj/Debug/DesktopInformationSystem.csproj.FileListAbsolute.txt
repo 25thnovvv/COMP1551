@@ -1,0 +1,84 @@
+D:\COMP1551\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe.config
+D:\COMP1551\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe
+D:\COMP1551\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.pdb
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.AssemblyReference.cache
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Properties.Resources.resources
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.GenerateResource.cache
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.CoreCompileInputs.cache
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.exe
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.pdb
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Login.resources
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Signup.resources
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.AddStudentForm.resources
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.MainForm.resources
+D:\COMP1551\DesktopInformationSystem\bin\Debug\Student\Student.resx
+D:\COMP1551\DesktopInformationSystem\bin\Debug\Student\Student.cs
+D:\COMP1551\DesktopInformationSystem\bin\Debug\Student\Student.Designer.cs
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Salary.resources
+D:\COMP1551\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Teacher.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.resx
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.cs
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.Designer.cs
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe.config
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.pdb
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.AssemblyReference.cache
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Login.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Signup.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.MainForm.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Properties.Resources.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Salary.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Teacher.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.GenerateResource.cache
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.CoreCompileInputs.cache
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.exe
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.pdb
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Admin.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.StudentForm.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.TeacherForm.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.AdminSalary.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.AssemblyReference.cache
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Admin.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Login.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Signup.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.MainForm.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Properties.Resources.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.AdminSalary.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Salary.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.StudentForm.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.AddStudentForm.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.TeacherForm.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Teacher.resources
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.GenerateResource.cache
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.CoreCompileInputs.cache
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.exe
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.pdb
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.resx
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.cs
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.Designer.cs
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe.config
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe
+C:\Users\baoso\OneDrive - Thang Long University\Máy tính\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.pdb
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.resx
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.cs
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\Student\Student.Designer.cs
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe.config
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.exe
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\bin\Debug\DesktopInformationSystem.pdb
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Admin.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Login.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Signup.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.MainForm.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Properties.Resources.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.AdminSalary.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Salary.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.StudentForm.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.TeacherForm.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Teacher.resources
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.exe
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.pdb
+C:\Users\Admin\Downloads\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Student.resources
+D:\COMP1551\Desktop-Information-System\DesktopInformationSystem\obj\Debug\DesktopInformationSystem.Student.resources
