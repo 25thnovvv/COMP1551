@@ -45,7 +45,6 @@ namespace DesktopInformationSystem
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void AddTeacher()
         {
             try
@@ -195,24 +194,6 @@ namespace DesktopInformationSystem
             teacher_subject2.SelectedIndex = -1;
             teacher_status.SelectedIndex = -1;
         }
-
-        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                teacher_id.Text = row.Cells["teacher_id"].Value.ToString();
-                teacher_name.Text = row.Cells["teacher_name"].Value.ToString();
-                teacher_gender.Text = row.Cells["teacher_gender"].Value.ToString();
-                teacher_email.Text = row.Cells["teacher_email"].Value.ToString();
-                teacher_phone.Text = row.Cells["teacher_phone"].Value.ToString();
-                teacher_role.Text = row.Cells["teacher_role"].Value.ToString();
-                teacher_subject1.Text = row.Cells["teacher_subject1"].Value.ToString();
-                teacher_subject2.Text = row.Cells["teacher_subject2"].Value.ToString();
-                teacher_status.Text = row.Cells["status"].Value.ToString();
-            }
-        }
-
         private void teacher_addBtn_Click(object sender, EventArgs e)
         {
             if (AreFieldsValid())
@@ -279,7 +260,7 @@ namespace DesktopInformationSystem
             ClearFields();
         }
 
-        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {

@@ -48,7 +48,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.signup_close);
             this.panel1.Controls.Add(this.signup_role);
             this.panel1.Controls.Add(this.label7);
@@ -72,7 +72,7 @@
             // 
             this.signup_close.AutoSize = true;
             this.signup_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup_close.Location = new System.Drawing.Point(254, 51);
+            this.signup_close.Location = new System.Drawing.Point(363, 3);
             this.signup_close.Name = "signup_close";
             this.signup_close.Size = new System.Drawing.Size(18, 18);
             this.signup_close.TabIndex = 16;
@@ -126,7 +126,7 @@
             this.signup_loginhere.AutoSize = true;
             this.signup_loginhere.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signup_loginhere.ForeColor = System.Drawing.Color.DimGray;
-            this.signup_loginhere.Location = new System.Drawing.Point(238, 361);
+            this.signup_loginhere.Location = new System.Drawing.Point(232, 363);
             this.signup_loginhere.Name = "signup_loginhere";
             this.signup_loginhere.Size = new System.Drawing.Size(80, 16);
             this.signup_loginhere.TabIndex = 11;
@@ -138,7 +138,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(79, 361);
+            this.label5.Location = new System.Drawing.Point(73, 363);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 16);
             this.label5.TabIndex = 10;
@@ -215,9 +215,9 @@
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(23, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 19);
+            this.label1.Size = new System.Drawing.Size(85, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Get Started";
+            this.label1.Text = "Register";
             // 
             // Signup
             // 

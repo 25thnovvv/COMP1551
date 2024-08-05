@@ -43,7 +43,7 @@ namespace DesktopInformationSystem
                     {
                         connect.Open();
                         String checkUsername = "SELECT * FROM login WHERE username = '"
-                            + signup_username.Text.Trim() + "'"; // login is our table name
+                            + signup_username.Text.Trim() + "'";
 
                         using (SqlCommand checkUser = new SqlCommand(checkUsername, connect))
                         {
@@ -74,7 +74,7 @@ namespace DesktopInformationSystem
 
                                     MessageBox.Show("Registered successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                    // TO SWITCH THE FORM 
+
                                     Login lForm = new Login();
                                     lForm.Show();
                                     this.Hide();

@@ -29,10 +29,8 @@ namespace DesktopInformationSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.Adminsalary_btn = new System.Windows.Forms.Button();
             this.Admin_btn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,49 +39,14 @@ namespace DesktopInformationSystem
             this.Student_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.logout_btn = new System.Windows.Forms.Button();
-            this.adminSalary1 = new DesktopInformationSystem.AdminSalary();
-            this.salary1 = new DesktopInformationSystem.Salary();
-            this.teacher1 = new DesktopInformationSystem.Teacher();
-            this.student1 = new DesktopInformationSystem.Student();
             this.admin1 = new DesktopInformationSystem.Admin();
-            this.panel1.SuspendLayout();
+            this.student1 = new DesktopInformationSystem.Student();
+            this.teacher1 = new DesktopInformationSystem.Teacher();
+            this.salary1 = new DesktopInformationSystem.Salary();
+            this.adminSalary1 = new DesktopInformationSystem.AdminSalary();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 25);
-            this.panel1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1080, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "X";
-            this.label3.Click += new System.EventHandler(this.Exit_btn);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(243, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Desktop Information System | Main Form";
             // 
             // panel2
             // 
@@ -98,10 +61,24 @@ namespace DesktopInformationSystem
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(178)))));
-            this.panel2.Location = new System.Drawing.Point(0, 25);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(225, 575);
+            this.panel2.Size = new System.Drawing.Size(225, 565);
             this.panel2.TabIndex = 1;
+            // 
+            // logout_btn
+            // 
+            this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.ForeColor = System.Drawing.Color.White;
+            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_btn.Location = new System.Drawing.Point(12, 524);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(64, 29);
+            this.logout_btn.TabIndex = 12;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.UseVisualStyleBackColor = false;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // Adminsalary_btn
             // 
@@ -203,45 +180,17 @@ namespace DesktopInformationSystem
             this.panel3.Controls.Add(this.salary1);
             this.panel3.Controls.Add(this.adminSalary1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(225, 25);
+            this.panel3.Location = new System.Drawing.Point(225, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(875, 575);
+            this.panel3.Size = new System.Drawing.Size(875, 565);
             this.panel3.TabIndex = 2;
             // 
-            // logout_btn
+            // admin1
             // 
-            this.logout_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logout_btn.ForeColor = System.Drawing.Color.White;
-            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logout_btn.Location = new System.Drawing.Point(12, 534);
-            this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(64, 29);
-            this.logout_btn.TabIndex = 12;
-            this.logout_btn.Text = "Logout";
-            this.logout_btn.UseVisualStyleBackColor = false;
-            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
-            // 
-            // adminSalary1
-            // 
-            this.adminSalary1.Location = new System.Drawing.Point(0, 0);
-            this.adminSalary1.Name = "adminSalary1";
-            this.adminSalary1.Size = new System.Drawing.Size(875, 575);
-            this.adminSalary1.TabIndex = 0;
-            // 
-            // salary1
-            // 
-            this.salary1.Location = new System.Drawing.Point(0, 0);
-            this.salary1.Name = "salary1";
-            this.salary1.Size = new System.Drawing.Size(875, 575);
-            this.salary1.TabIndex = 1;
-            // 
-            // teacher1
-            // 
-            this.teacher1.Location = new System.Drawing.Point(0, -1);
-            this.teacher1.Name = "teacher1";
-            this.teacher1.Size = new System.Drawing.Size(875, 576);
-            this.teacher1.TabIndex = 2;
+            this.admin1.Location = new System.Drawing.Point(0, 0);
+            this.admin1.Name = "admin1";
+            this.admin1.Size = new System.Drawing.Size(875, 589);
+            this.admin1.TabIndex = 4;
             // 
             // student1
             // 
@@ -250,27 +199,38 @@ namespace DesktopInformationSystem
             this.student1.Size = new System.Drawing.Size(875, 575);
             this.student1.TabIndex = 3;
             // 
-            // admin1
+            // teacher1
             // 
-            this.admin1.Location = new System.Drawing.Point(0, 0);
-            this.admin1.Name = "admin1";
-            this.admin1.Size = new System.Drawing.Size(875, 575);
-            this.admin1.TabIndex = 4;
+            this.teacher1.Location = new System.Drawing.Point(0, -1);
+            this.teacher1.Name = "teacher1";
+            this.teacher1.Size = new System.Drawing.Size(875, 576);
+            this.teacher1.TabIndex = 2;
+            // 
+            // salary1
+            // 
+            this.salary1.Location = new System.Drawing.Point(0, 0);
+            this.salary1.Name = "salary1";
+            this.salary1.Size = new System.Drawing.Size(875, 575);
+            this.salary1.TabIndex = 1;
+            // 
+            // adminSalary1
+            // 
+            this.adminSalary1.Location = new System.Drawing.Point(0, 0);
+            this.adminSalary1.Name = "adminSalary1";
+            this.adminSalary1.Size = new System.Drawing.Size(875, 575);
+            this.adminSalary1.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.ClientSize = new System.Drawing.Size(1100, 565);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -279,13 +239,9 @@ namespace DesktopInformationSystem
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Student_btn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Teachersalary_btn;
         private System.Windows.Forms.Button Teachers_btn;

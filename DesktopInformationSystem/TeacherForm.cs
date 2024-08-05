@@ -40,14 +40,12 @@ namespace DesktopInformationSystem
         {
             salary1.Visible = false;
             teacher1.Visible = true;
-            teacher1.DisplayTeacherData();
         }
 
         private void Teachersalary_btn_Click(object sender, EventArgs e)
         {
             teacher1.Visible = false;
             salary1.Visible = true;
-            salary1.displayTeachers();
         }
     }
 }
