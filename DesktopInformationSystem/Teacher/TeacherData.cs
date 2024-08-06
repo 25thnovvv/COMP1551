@@ -15,12 +15,10 @@ namespace DesktopInformationSystem
 
         private static readonly string ConnectionString = ConnectConfig.connection;
 
-        // Parameterless constructor
         public TeacherData()
         {
         }
 
-        // Parameterized constructor
         public TeacherData(string name, string gender, string email, string phone, string role, string status, string teacherID, string teacherSubject1, string teacherSubject2, int salary)
             : base(name, gender, email, phone, role, status)
         {

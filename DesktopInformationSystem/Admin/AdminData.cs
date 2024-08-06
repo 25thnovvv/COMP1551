@@ -18,10 +18,10 @@ namespace DesktopInformationSystem
 
         private static readonly string ConnectionString = ConnectConfig.connection;
 
-        // Parameterless constructor
         public AdminData()
         {
         }
+
         public AdminData(string name, string gender, string email, string phone, string role, string status, string adminID, string adminWorktype, string adminWorkinghours, int salary)
             : base(name, gender, email, phone, role, status)
         {

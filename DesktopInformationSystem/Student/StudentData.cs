@@ -18,6 +18,7 @@ namespace DesktopInformationSystem
         public string StudentStudiedSubject2 { set; get; }
 
         private static readonly string ConnectionString = ConnectConfig.connection;
+
         public StudentData()
         {
         }

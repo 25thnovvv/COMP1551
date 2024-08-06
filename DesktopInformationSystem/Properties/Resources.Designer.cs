@@ -59,15 +59,5 @@ namespace DesktopInformationSystem.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_logout_rounded_up_filled_35px {
-            get {
-                object obj = ResourceManager.GetObject("icons8_logout_rounded_up_filled_35px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

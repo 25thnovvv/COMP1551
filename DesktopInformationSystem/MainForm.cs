@@ -23,6 +23,7 @@ namespace DesktopInformationSystem
             salary1.Visible = false;
             admin1.Visible = false;
             adminSalary1.Visible = false;
+            student1.DisplayStudentData();
         }
 
         private void Teachers_btn_Click(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace DesktopInformationSystem
             teacher1.Visible = true;
             admin1.Visible = false;
             adminSalary1.Visible = false;
+            teacher1.DisplayTeacherData();
         }
 
         private void Admin_btn_Click(object sender, EventArgs e)
@@ -41,6 +43,7 @@ namespace DesktopInformationSystem
             salary1.Visible = false;
             admin1.Visible = true;
             adminSalary1.Visible = false;
+            admin1.DisplayAdminData();
         }
 
         private void Teachersalary_btn_Click(object sender, EventArgs e)
@@ -50,6 +53,7 @@ namespace DesktopInformationSystem
             salary1.Visible = true;
             admin1.Visible = false;
             adminSalary1.Visible = false; 
+            salary1.displayTeachers();
         }
 
         private void Adminsalary_btn_Click(object sender, EventArgs e)
@@ -59,6 +63,7 @@ namespace DesktopInformationSystem
             salary1.Visible = false;
             admin1.Visible = false;
             adminSalary1.Visible = true;
+            adminSalary1.displayAdmins();
         }
 
         private void logout_btn_Click(object sender, EventArgs e)
