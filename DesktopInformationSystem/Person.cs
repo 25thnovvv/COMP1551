@@ -2,6 +2,7 @@
 
 namespace DesktopInformationSystem
 {
+    // This class represents a base class for various types of people within the system.
     public class Person
     {
         public string Name { get; set; }

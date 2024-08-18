@@ -8,6 +8,7 @@ namespace DesktopInformationSystem
 {
     public class ConnectConfig
     {
-        public static string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COMP1551\Desktop-Information-System\DesktopInformationSystem.mdf;Integrated Security=True;Connect Timeout=30";
+        // Static string property to hold the connection string to the database.
+        public static string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Greenwich\COMP1551\Desktop-Information-System\DesktopInformationSystem.mdf;Integrated Security=True;Connect Timeout=30";
     }
 }
