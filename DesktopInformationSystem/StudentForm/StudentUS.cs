@@ -11,27 +11,35 @@ using System.Windows.Forms;
 
 namespace DesktopInformationSystem
 {
+    // StudentUS is a UserControl that manages and displays student data within the system.
     public partial class StudentUS : UserControl
     {
+        // Connection string for connecting to the database, retrieved from the configuration.
         private readonly string connectionString = ConnectConfig.connection;
+
+        // Constructor initializes the component and displays student data.
         public StudentUS()
         {
-            InitializeComponent();
+            InitializeComponent(); // Sets up the form’s controls and layout.
 
-            DisplayStudentData();
-
-            disableFields();
+            DisplayStudentData(); // Load and display student data.
+            disableFields(); // Disable input fields to make them read-only.
         }
+
+        // RefreshData method ensures that the student data display is updated on the UI thread.
         private void RefreshData()
         {
             if (InvokeRequired)
             {
+                // If the method is called from a non-UI thread, invoke it on the UI thread.
                 Invoke((MethodInvoker)RefreshData);
                 return;
             }
-            DisplayStudentData();
-            disableFields();
+            DisplayStudentData(); // Reload the student data.
+            disableFields(); // Ensure input fields remain disabled.
         }
+
+        // Disables all input fields related to student details, making them read-only.
         public void disableFields()
         {
             student_id.Enabled = false;
@@ -46,138 +54,20 @@ namespace DesktopInformationSystem
             student_studiedsubject1.Enabled = false;
             student_studiedsubject2.Enabled = false;
         }
+
+        // Displays student data by populating the DataGridView with data from the StudentData source.
         public void DisplayStudentData()
         {
+            // Fetch student data from the data source.
             List<StudentData> listData = StudentData.GetStudentListData();
-
+            // Bind the fetched data to the DataGridView for display.
             student_studentData.DataSource = listData;
         }
-        private void AddStudent()
-        {
-            try
-            {
-                using (SqlConnection connect = new SqlConnection(connectionString))
-                {
-                    connect.Open();
-                    string insertData = "INSERT INTO students " +
-                        "(student_id, student_name, student_gender, student_email, student_phone, student_currentsubject1, student_currentsubject2, student_studiedsubject1, student_studiedsubject2, student_role, insert_date, status) " +
-                        "VALUES (@studentID, @studentName, @studentGender, @studentEmail, @studentPhone, @studentCurrentsubject1, @studentCurrentsubject2, @studentStudiedsubject1, @studentStudiedsubject2, @studentRole, @insertDate, @status)";
 
-                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
-                    {
-                        cmd.Parameters.AddWithValue("@studentID", student_id.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentName", student_name.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentGender", student_gender.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentEmail", student_email.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentPhone", student_phone.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentRole", student_role.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentCurrentsubject1", student_currentsubject1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentCurrentsubject2", student_currentsubject2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentStudiedsubject1", student_studiedsubject1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentStudiedsubject2", student_studiedsubject2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@insertDate", DateTime.Today);
-                        cmd.Parameters.AddWithValue("@status", student_status.Text.Trim());
-
-                        cmd.ExecuteNonQuery();
-                        DisplayStudentData();
-                        MessageBox.Show("Added successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearFields();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private bool IsStudentIDTaken()
-        {
-            try
-            {
-                using (SqlConnection connect = new SqlConnection(connectionString))
-                {
-                    connect.Open();
-                    string checkEmID = "SELECT COUNT(*) FROM students WHERE student_id = @teID AND delete_date IS NULL";
-
-                    using (SqlCommand checkEm = new SqlCommand(checkEmID, connect))
-                    {
-                        checkEm.Parameters.AddWithValue("@teID", student_id.Text.Trim());
-                        int count = (int)checkEm.ExecuteScalar();
-                        return count >= 1;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-            }
-        }
-        private void UpdateStudent()
-        {
-            try
-            {
-                using (SqlConnection connect = new SqlConnection(connectionString))
-                {
-                    connect.Open();
-                    string updateData = "UPDATE students SET student_name = @studentName, student_gender = @studentGender, student_email = @studentEmail, student_phone = @studentPhone, student_role = @studentRole, student_currentsubject1 = @studentCurrentsubject1, student_currentsubject2 = @studentCurrentsubject2, student_studiedsubject1 = @studentStudiedsubject1, student_studiedsubject2 = @studentStudiedsubject2, update_date = @updateDate, status = @status WHERE student_id = @studentID";
-
-                    using (SqlCommand cmd = new SqlCommand(updateData, connect))
-                    {
-                        cmd.Parameters.AddWithValue("@studentName", student_name.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentGender", student_gender.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentEmail", student_email.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentPhone", student_phone.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentRole", student_role.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentCurrentsubject1", student_currentsubject1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentCurrentsubject2", student_currentsubject2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentStudiedsubject1", student_studiedsubject1.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentStudiedsubject2", student_studiedsubject2.Text.Trim());
-                        cmd.Parameters.AddWithValue("@updateDate", DateTime.Today);
-                        cmd.Parameters.AddWithValue("@status", student_status.Text.Trim());
-                        cmd.Parameters.AddWithValue("@studentID", student_id.Text.Trim());
-
-                        cmd.ExecuteNonQuery();
-                        DisplayStudentData();
-                        MessageBox.Show("Updated successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearFields();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void DeleteStudent()
-        {
-            try
-            {
-                using (SqlConnection connect = new SqlConnection(connectionString))
-                {
-                    connect.Open();
-                    string updateData = "UPDATE students SET delete_date = @deleteDate WHERE student_id = @studentID";
-
-                    using (SqlCommand cmd = new SqlCommand(updateData, connect))
-                    {
-                        cmd.Parameters.AddWithValue("@deleteDate", DateTime.Today);
-                        cmd.Parameters.AddWithValue("@studentID", student_id.Text.Trim());
-
-                        cmd.ExecuteNonQuery();
-                        DisplayStudentData();
-                        MessageBox.Show("Deleted successfully!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearFields();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        // Validates if all required input fields are filled with non-empty values.
         private bool AreFieldsValid()
         {
+            // Check that none of the fields are null or whitespace.
             return !string.IsNullOrWhiteSpace(student_id.Text) &&
                    !string.IsNullOrWhiteSpace(student_name.Text) &&
                    !string.IsNullOrWhiteSpace(student_gender.Text) &&
@@ -190,26 +80,15 @@ namespace DesktopInformationSystem
                    !string.IsNullOrWhiteSpace(student_studiedsubject2.Text) &&
                    !string.IsNullOrWhiteSpace(student_status.Text);
         }
-        private void ClearFields()
-        {
-            student_id.Clear();
-            student_name.Clear();
-            student_gender.SelectedIndex = -1;
-            student_email.Clear();
-            student_phone.Clear();
-            student_role.SelectedIndex = -1;
-            student_currentsubject1.SelectedIndex = -1;
-            student_currentsubject2.SelectedIndex = -1;
-            student_studiedsubject1.SelectedIndex = -1;
-            student_studiedsubject2.SelectedIndex = -1;
-            student_status.SelectedIndex = -1;
-        }
 
+        // Handles the cell click event in the DataGridView to populate input fields with the selected student's data.
         private void student_studentData_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex != -1)
             {
+                // Get the selected row from the DataGridView.
                 DataGridViewRow row = student_studentData.Rows[e.RowIndex];
+                // Populate the input fields with the data from the selected row.
                 student_id.Text = row.Cells[1].Value.ToString();
                 student_name.Text = row.Cells[2].Value.ToString();
                 student_gender.Text = row.Cells[3].Value.ToString();
@@ -221,72 +100,6 @@ namespace DesktopInformationSystem
                 student_studiedsubject1.Text = row.Cells[9].Value.ToString();
                 student_studiedsubject2.Text = row.Cells[10].Value.ToString();
                 student_status.Text = row.Cells[11].Value.ToString();
-            }
-        }
-
-        private void student_addBtn_Click(object sender, EventArgs e)
-        {
-            if (AreFieldsValid())
-            {
-                if (IsStudentIDTaken())
-                {
-                    MessageBox.Show($"{student_id.Text.Trim()} is already taken", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    AddStudent();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please fill all blank fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void student_clearBtn_Click(object sender, EventArgs e)
-        {
-            ClearFields();
-        }
-
-        private void student_updateBtn_Click(object sender, EventArgs e)
-        {
-            if (AreFieldsValid())
-            {
-                var result = MessageBox.Show($"Are you sure you want to UPDATE student ID: {student_id.Text.Trim()}?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-                if (result == DialogResult.Yes)
-                {
-                    UpdateStudent();
-                }
-                else
-                {
-                    MessageBox.Show("Cancelled.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please fill all blank fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void student_deleteBtn_Click(object sender, EventArgs e)
-        {
-            if (AreFieldsValid())
-            {
-                var result = MessageBox.Show($"Are you sure you want to DELETE student ID: {student_id.Text.Trim()}?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-                if (result == DialogResult.Yes)
-                {
-                    DeleteStudent();
-                }
-                else
-                {
-                    MessageBox.Show("Cancelled.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please fill all blank fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

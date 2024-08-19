@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DesktopInformationSystem
 {
     // CombinedData class serves as a data model to encapsulate various attributes 
-    // that might be used to represent combined information about students, teachers, 
+    // that use to represent combined information about students, teachers, 
     // and admins in the system.
     class CombinedData
     {

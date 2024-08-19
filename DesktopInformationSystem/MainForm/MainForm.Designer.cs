@@ -75,7 +75,7 @@ namespace DesktopInformationSystem
             this.Viewall_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Viewall_btn.ForeColor = System.Drawing.Color.White;
             this.Viewall_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Viewall_btn.Location = new System.Drawing.Point(12, 427);
+            this.Viewall_btn.Location = new System.Drawing.Point(12, 199);
             this.Viewall_btn.Name = "Viewall_btn";
             this.Viewall_btn.Size = new System.Drawing.Size(200, 40);
             this.Viewall_btn.TabIndex = 13;
@@ -103,7 +103,7 @@ namespace DesktopInformationSystem
             this.Adminsalary_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Adminsalary_btn.ForeColor = System.Drawing.Color.White;
             this.Adminsalary_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Adminsalary_btn.Location = new System.Drawing.Point(12, 381);
+            this.Adminsalary_btn.Location = new System.Drawing.Point(12, 429);
             this.Adminsalary_btn.Name = "Adminsalary_btn";
             this.Adminsalary_btn.Size = new System.Drawing.Size(200, 40);
             this.Adminsalary_btn.TabIndex = 11;
@@ -117,7 +117,7 @@ namespace DesktopInformationSystem
             this.Admin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Admin_btn.ForeColor = System.Drawing.Color.White;
             this.Admin_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Admin_btn.Location = new System.Drawing.Point(12, 197);
+            this.Admin_btn.Location = new System.Drawing.Point(12, 245);
             this.Admin_btn.Name = "Admin_btn";
             this.Admin_btn.Size = new System.Drawing.Size(200, 40);
             this.Admin_btn.TabIndex = 10;
@@ -142,7 +142,7 @@ namespace DesktopInformationSystem
             this.Teachers_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Teachers_btn.ForeColor = System.Drawing.Color.White;
             this.Teachers_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Teachers_btn.Location = new System.Drawing.Point(12, 289);
+            this.Teachers_btn.Location = new System.Drawing.Point(12, 337);
             this.Teachers_btn.Name = "Teachers_btn";
             this.Teachers_btn.Size = new System.Drawing.Size(200, 40);
             this.Teachers_btn.TabIndex = 8;
@@ -156,7 +156,7 @@ namespace DesktopInformationSystem
             this.Teachersalary_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Teachersalary_btn.ForeColor = System.Drawing.Color.White;
             this.Teachersalary_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Teachersalary_btn.Location = new System.Drawing.Point(12, 335);
+            this.Teachersalary_btn.Location = new System.Drawing.Point(12, 383);
             this.Teachersalary_btn.Name = "Teachersalary_btn";
             this.Teachersalary_btn.Size = new System.Drawing.Size(200, 40);
             this.Teachersalary_btn.TabIndex = 7;
@@ -170,7 +170,7 @@ namespace DesktopInformationSystem
             this.Student_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Student_btn.ForeColor = System.Drawing.Color.White;
             this.Student_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Student_btn.Location = new System.Drawing.Point(12, 243);
+            this.Student_btn.Location = new System.Drawing.Point(12, 291);
             this.Student_btn.Name = "Student_btn";
             this.Student_btn.Size = new System.Drawing.Size(200, 40);
             this.Student_btn.TabIndex = 3;

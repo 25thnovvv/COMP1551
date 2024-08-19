@@ -29,7 +29,7 @@ namespace DesktopInformationSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.student_studiedsubject2 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -104,10 +104,8 @@ namespace DesktopInformationSystem
             // 
             this.student_studiedsubject2.FormattingEnabled = true;
             this.student_studiedsubject2.Items.AddRange(new object[] {
-            "Toan",
-            "Van ",
-            "Anh",
-            "Sinh"});
+            "Web Programming 1",
+            "User Interface Design\t"});
             this.student_studiedsubject2.Location = new System.Drawing.Point(633, 118);
             this.student_studiedsubject2.Name = "student_studiedsubject2";
             this.student_studiedsubject2.Size = new System.Drawing.Size(144, 21);
@@ -127,10 +125,8 @@ namespace DesktopInformationSystem
             // 
             this.student_studiedsubject1.FormattingEnabled = true;
             this.student_studiedsubject1.Items.AddRange(new object[] {
-            "Toan",
-            "Van ",
-            "Anh",
-            "Sinh"});
+            "Web Programming 1",
+            "User Interface Design\t"});
             this.student_studiedsubject1.Location = new System.Drawing.Point(633, 91);
             this.student_studiedsubject1.Name = "student_studiedsubject1";
             this.student_studiedsubject1.Size = new System.Drawing.Size(144, 21);
@@ -150,10 +146,8 @@ namespace DesktopInformationSystem
             // 
             this.student_currentsubject2.FormattingEnabled = true;
             this.student_currentsubject2.Items.AddRange(new object[] {
-            "Toan",
-            "Van ",
-            "Anh",
-            "Sinh"});
+            "Application Development",
+            "Data and Web Analytics"});
             this.student_currentsubject2.Location = new System.Drawing.Point(633, 64);
             this.student_currentsubject2.Name = "student_currentsubject2";
             this.student_currentsubject2.Size = new System.Drawing.Size(144, 21);
@@ -173,10 +167,8 @@ namespace DesktopInformationSystem
             // 
             this.student_currentsubject1.FormattingEnabled = true;
             this.student_currentsubject1.Items.AddRange(new object[] {
-            "Toan",
-            "Van ",
-            "Anh",
-            "Sinh"});
+            "Application Development",
+            "Data and Web Analytics"});
             this.student_currentsubject1.Location = new System.Drawing.Point(633, 37);
             this.student_currentsubject1.Name = "student_currentsubject1";
             this.student_currentsubject1.Size = new System.Drawing.Size(144, 21);
@@ -413,14 +405,14 @@ namespace DesktopInformationSystem
             this.student_studentData.AllowUserToAddRows = false;
             this.student_studentData.AllowUserToDeleteRows = false;
             this.student_studentData.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.student_studentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.student_studentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.student_studentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.student_studentData.EnableHeadersVisualStyles = false;
             this.student_studentData.Location = new System.Drawing.Point(20, 45);

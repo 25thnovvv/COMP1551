@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Greenwich\\COMP1551\\Desktop-Information-System\\DesktopInformationSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BC7DD562-9B2E-4930-9A2C-073C34C0BD57}|DesktopInformationSystem.csproj|d:\\greenwich\\comp1551\\desktop-information-system\\desktopinformationsystem\\mainform\\teacher\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7DD562-9B2E-4930-9A2C-073C34C0BD57}|DesktopInformationSystem.csproj|solutionrelative:mainform\\teacher\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "D:\\Greenwich\\COMP1551\\Desktop-Information-System\\DesktopInformationSystem\\MainForm\\Teacher\\Teacher.cs",
-              "RelativeDocumentMoniker": "MainForm\\Teacher\\Teacher.cs",
-              "ToolTip": "D:\\Greenwich\\COMP1551\\Desktop-Information-System\\DesktopInformationSystem\\MainForm\\Teacher\\Teacher.cs",
-              "RelativeToolTip": "MainForm\\Teacher\\Teacher.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAmwAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T16:36:41.226Z",
-              "EditorCaption": ""
             }
           ]
         }
